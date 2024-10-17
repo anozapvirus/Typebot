@@ -11,3 +11,15 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y git && git clone h
 ```
 chmod +x typebot.sh && ./typebot.sh
 ```
+
+```
+Servidor
+smtp.gmail.com
+
+Nome de usuário
+sistemazapzap@gmail.com
+
+Número da porta
+465
+
+```

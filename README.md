@@ -8,4 +8,6 @@ Não são muitos passos para utilizar essa solução, mas é importante prestar 
 sudo apt update && sudo apt upgrade -y && sudo apt install -y git && git clone https://github.com/anozapvirus/Typebot.git && cd Typebot && chmod +x install.sh && ./install.sh
 ```
 
-
+```
+chmod +x typebot.sh && ./typebot.sh
+```

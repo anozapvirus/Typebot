@@ -39,21 +39,22 @@ egnmcnndecwvgryr
 Configure os subdomínios para acessar os diferentes serviços do Typebot. Abaixo estão os subdomínios recomendados:
 
 
- ```
-  typebot.seudominio.com
-  ```
+```
+typebot.seudominio.com
+```
 
-  ```
- bot.seudominio.com
-  ```
+
+```
+bot.seudominio.com
+```
 ```
 storage.seudominio.com
 ```
-" > README.md
+
 
 ### 4. Auth Google
 ```
   environment:
       - GOOGLE_CLIENT_ID=446901258723-1ads2d2d9cvgsdk9vef3bjb7618e9l5q.apps.googleusercontent.com
       - GOOGLE_CLIENT_SECRET=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
-      ```
+```

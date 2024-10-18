@@ -17,7 +17,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y git && git clone h
 
 Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguintes informações:
 
-- **Servidor:** \```smtp.gmail.com```\
+- **Servidor:** ```smtp.gmail.com```
 - **Nome de usuário:** \`sistemazapzap@gmail.com\`
 - **Número da porta:** \`465\`
 - **Senha do app:** \`egnmcnndecwvgryr\`

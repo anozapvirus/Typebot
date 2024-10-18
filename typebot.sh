@@ -97,86 +97,131 @@ echo -e "\e[97m\e[0m"
 #
 #########################################################
 #
-# PERGUNTAS PARA VARIAVEIS
 #
+# PERGUNTAS PARA VARIÁVEIS
+#
+while true; do
+  echo ""
+  echo -e "\e[93m==============================================================================\e[0m"
+  echo -e "\e[93m=                                                                            =\e[0m"
+  echo -e "\e[93m=                 \e[33mPreencha as informações solicitadas abaixo\e[93m                 =\e[0m"
+  echo -e "\e[93m=                                                                            =\e[0m"
+  echo -e "\e[93m==============================================================================\e[0m"
+  echo ""
+  echo ""
+  echo ""
+  
+  echo -e "\e[93mPasso \e[33m1/13\e[0m"
+  read -p "Digite a versão que deseja instalar (ex: latest | main | 2.16.0): " version
+  
+  echo -e "\e[93mPasso \e[33m2/13\e[0m"
+  read -p "Link do Builder (ex: typebot.seudominio.com): " builder
+  
+  echo -e "\e[93mPasso \e[33m3/13\e[0m"
+  read -p "Porta do Builder (padrão: 3001): " portabuilder
+  
+  echo -e "\e[93mPasso \e[33m4/13\e[0m"
+  read -p "Link do Viewer (ex: bot.seudominio.com): " viewer
+  
+  echo -e "\e[93mPasso \e[33m5/13\e[0m"
+  read -p "Porta do Viewer (padrão: 3002): " portaviewer
+  
+  echo -e "\e[93mPasso \e[33m6/13\e[0m"
+  read -p "Link do Storage (ex: storage.seudominio.com): " storage
+  
+  echo -e "\e[93mPasso \e[33m7/13\e[0m"
+  read -p "Porta do Storage (padrão: 9000): " portastorage
+  
+  echo -e "\e[93mPasso \e[33m8/13\e[0m"
+  read -p "Seu Email (ex: contato@dominio.com): " email
+  
+  echo -e "\e[93mPasso \e[33m9/13\e[0m"
+  read -p "Senha do seu Email (se for gmail, precisa ser a senha de aplicativo): " senha
+  
+  echo -e "\e[93mPasso \e[33m10/13\e[0m"
+  read -p "SMTP do seu email (ex: smtp.hostinger.com): " smtp
+  
+  echo -e "\e[93mPasso \e[33m11/13\e[0m"
+  read -p "Porta SMTP (ex: 465): " portasmtp
+  
+  echo -e "\e[93mPasso \e[33m12/13\e[0m"
+  read -p "SMTP_SECURE (Se a porta SMTP for 465, digite true, caso contrario,digite false): " SECURE
+  
+  echo -e "\e[93mPasso \e[33m13/13\e[0m"
+  echo "crie sua ApiKey no link: https://codebeautify.org/generate-random-hexadecimal-numbers"
+  read -p "Chave secreta de 32 caracteres: (ex: c56f3775313440c3edce57529a0f02b4): " key
 
-echo ""
-echo -e "\e[93m==============================================================================\e[0m"
-echo -e "\e[93m=                                                                            =\e[0m"
-echo -e "\e[93m=                 \e[33mPreencha as informações solicitadas abaixo\e[93m                 =\e[0m"
-echo -e "\e[93m=                                                                            =\e[0m"
-echo -e "\e[93m==============================================================================\e[0m"
-echo ""
-echo ""
-echo ""
-echo -e "\e[93mPasso \e[33m1/13\e[0m"
-read -p "Digite a versão que deseja instalar (ex: latest | main | 2.16.0): " version
-echo ""
-echo -e "\e[93mPasso \e[33m2/13\e[0m"
-read -p "Link do Builder (ex: typebot.seudominio.com): " builder
-echo ""
-echo -e "\e[93mPasso \e[33m3/13\e[0m"
-read -p "Porta do Builder (padrão: 3001): " portabuilder
-echo ""
-echo -e "\e[93mPasso \e[33m4/13\e[0m"
-read -p "Link do Viewer (ex: bot.seudominio.com): " viewer
-echo ""
-echo -e "\e[93mPasso \e[33m5/13\e[0m"
-read -p "Porta do Viewer (padrão: 3002): " portaviewer
-echo ""
-echo -e "\e[93mPasso \e[33m6/13\e[0m"
-read -p "Link do Storage (ex: storage.seudominio.com): " storage
-echo ""
-echo -e "\e[93mPasso \e[33m7/13\e[0m"
-read -p "Porta do Storage (padrão: 9000): " portastorage
-echo ""
-echo -e "\e[93mPasso \e[33m8/13\e[0m"
-read -p "Seu Email (ex: contato@dominio.com): " email
-echo ""
-echo -e "\e[93mPasso \e[33m9/13\e[0m"
-read -p "Senha do seu Email (se for gmail, precisa ser a senha de aplicativo): " senha
-echo ""
-echo -e "\e[93mPasso \e[33m10/13\e[0m"
-read -p "SMTP do seu email (ex: smtp.hostinger.com): " smtp
-echo ""
-echo -e "\e[93mPasso \e[33m11/13\e[0m"
-read -p "Porta SMTP (ex: 465): " portasmtp
-echo ""
-echo -e "\e[93mPasso \e[33m12/13\e[0m"
-read -p "SMTP_SECURE (Se a porta SMTP for 465, digite true, caso contrario,digite false): " SECURE
-echo ""
-echo -e "\e[93mPasso \e[33m13/13\e[0m"
-echo "crie sua ApiKey no link: https://codebeautify.org/generate-random-hexadecimal-numbers"
-read -p "Chave secreta de 32 caracteres: (ex: c56f3775313440c3edce57529a0f02b4): " key
-
-#
-# FIM DE PERGUNTAS PARA VARIAVEIS
-#
-#########################################################
-#
-# VERIFICAÇÃO DE DADOS
-#
-
-clear
-
-echo ""
-echo -e "Versão: \e[33m$version\e[0m"
-echo -e "Link do Builder: \e[33m$builder\e[0m"
-echo -e "Porta do Builder: \e[33m$portabuilder\e[0m"
-echo -e "Link do Viewer: \e[33m$viewer\e[0m"
-echo -e "Porta do Viewer: \e[33m$portaviewer\e[0m"
-echo -e "Link do Storage: \e[33m$storage\e[0m"
-echo -e "Porta do Storage: \e[33m$portastorage\e[0m"
-echo -e "Seu Email: \e[33m$email\e[0m"
-echo -e "Senha do seu Email: \e[33m$senha\e[0m"
-echo -e "SMTP do seu email: \e[33m$smtp\e[0m"
-echo -e "Porta SMTP: \e[33m$portasmtp\e[0m"
-echo -e "SMTP_SECURE: \e[33m$SECURE\e[0m"
-echo -e "Chave secreta: \e[33m$key\e[0m"
-echo ""
-echo ""
-read -p "As informações estão certas? (y/n): " confirma1
-if [ "$confirma1" == "y" ]; then
+  #
+  # FIM DE PERGUNTAS PARA VARIÁVEIS
+  #
+  
+  #########################################################
+  #
+  # VERIFICAÇÃO DE DADOS
+  #
+  
+  clear
+  
+  echo ""
+  echo -e "Versão: \e[33m$version\e[0m"
+  echo -e "Link do Builder: \e[33m$builder\e[0m"
+  echo -e "Porta do Builder: \e[33m$portabuilder\e[0m"
+  echo -e "Link do Viewer: \e[33m$viewer\e[0m"
+  echo -e "Porta do Viewer: \e[33m$portaviewer\e[0m"
+  echo -e "Link do Storage: \e[33m$storage\e[0m"
+  echo -e "Porta do Storage: \e[33m$portastorage\e[0m"
+  echo -e "Seu Email: \e[33m$email\e[0m"
+  echo -e "Senha do seu Email: \e[33m$senha\e[0m"
+  echo -e "SMTP do seu email: \e[33m$smtp\e[0m"
+  echo -e "Porta SMTP: \e[33m$portasmtp\e[0m"
+  echo -e "SMTP_SECURE: \e[33m$SECURE\e[0m"
+  echo -e "Chave secreta: \e[33m$key\e[0m"
+  echo ""
+  echo ""
+  
+  read -p "As informações estão certas? (y/n): " confirma1
+  if [ "$confirma1" == "y" ]; then
+    echo "Instalação iniciada!"
+    break  # Sai do loop, pois as informações estão corretas
+  elif [ "$confirma1" == "n" ]; then
+    echo "Quais informações você deseja alterar?"
+    echo "Digite o número correspondente à pergunta que deseja corrigir ou 'sair' para encerrar."
+    echo "1 - Versão"
+    echo "2 - Link do Builder"
+    echo "3 - Porta do Builder"
+    echo "4 - Link do Viewer"
+    echo "5 - Porta do Viewer"
+    echo "6 - Link do Storage"
+    echo "7 - Porta do Storage"
+    echo "8 - Seu Email"
+    echo "9 - Senha do seu Email"
+    echo "10 - SMTP do seu Email"
+    echo "11 - Porta SMTP"
+    echo "12 - SMTP_SECURE"
+    echo "13 - Chave secreta"
+    read -p "Sua escolha: " escolha
+    case $escolha in
+      1) read -p "Digite novamente a versão que deseja instalar: " version ;;
+      2) read -p "Link do Builder (ex: typebot.seudominio.com): " builder ;;
+      3) read -p "Porta do Builder (padrão: 3001): " portabuilder ;;
+      4) read -p "Link do Viewer (ex: bot.seudominio.com): " viewer ;;
+      5) read -p "Porta do Viewer (padrão: 3002): " portaviewer ;;
+      6) read -p "Link do Storage (ex: storage.seudominio.com): " storage ;;
+      7) read -p "Porta do Storage (padrão: 9000): " portastorage ;;
+      8) read -p "Seu Email (ex: contato@dominio.com): " email ;;
+      9) read -p "Senha do seu Email (se for gmail, precisa ser a senha de aplicativo): " senha ;;
+      10) read -p "SMTP do seu email (ex: smtp.hostinger.com): " smtp ;;
+      11) read -p "Porta SMTP (ex: 465): " portasmtp ;;
+      12) read -p "SMTP_SECURE (Se a porta SMTP for 465, digite true, caso contrario,digite false): " SECURE ;;
+      13) read -p "Chave secreta de 32 caracteres: (ex: c56f3775313440c3edce57529a0f02b4): " key ;;
+      sair) exit 0 ;;
+      *) echo "Opção inválida, por favor escolha um número entre 1 e 13 ou 'sair'." ;;
+    esac
+  else
+    echo "Resposta inválida. Digite 'y' para confirmar ou 'n' para encerrar a instalação."
+    exit 1
+  fi
+done
 
 #
 # FIM DE VERIFICAÇÃO DE DADOS

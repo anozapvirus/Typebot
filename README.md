@@ -24,3 +24,12 @@ Número da porta
 465
 Senha app: egnmcnndecwvgryr
 ```
+
+
+```
+sUBDOMINIOS
+typebot.seudominio.com
+bot.seudominio.com):
+storage.seudominio.com
+
+```

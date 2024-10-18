@@ -228,11 +228,13 @@ sudo apt install certbot -y
 sudo apt install python3-certbot-nginx -y
 sudo apt update
 
+cd /home
 mkdir typebot.io
 cd typebot.io
 echo ""
 echo ""
 echo "Atualizado/Instalado com Sucesso"
+
 
 sleep 3
 
@@ -396,9 +398,9 @@ EOL
 # CRIANDO LINK SIMBOLICO
 #
 
-sudo mv typebot /etc/nginx/sites-available/
+sudo mv /home/typebot.io /etc/nginx/sites-available/typebotyrandev
 
-sudo ln -s /etc/nginx/sites-available/typebot /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/typebotyrandev /etc/nginx/sites-enabled/
 
 #
 # FIM DE CRIANDO LINK SIMBOLICO
@@ -448,10 +450,9 @@ EOL
 # CRIANDO LINK SIMBOLICO
 #
 
-sudo mv bot /etc/nginx/sites-available/
+sudo mv /home/botyrandev /etc/nginx/sites-available/botyrandev
 
-sudo ln -s /etc/nginx/sites-available/bot /etc/nginx/sites-enabled
-
+sudo ln -s /etc/nginx/sites-available/botyrandev /etc/nginx/sites-enabled/
 #
 # FIM DE CRIANDO LINK SIMBOLICO
 #
@@ -500,9 +501,9 @@ EOL
 # CRIANDO LINK SIMBOLICO
 #
 
-sudo mv storage /etc/nginx/sites-available/
+sudo mv /home/storageyrandev /etc/nginx/sites-available/storageyrandev
 
-sudo ln -s /etc/nginx/sites-available/storage /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/storageyrandev /etc/nginx/sites-enabled/
 
 #
 # FIM DE CRIANDO LINK SIMBOLICO

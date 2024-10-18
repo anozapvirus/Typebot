@@ -19,10 +19,10 @@ Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguin
 
 - **Servidor:**
 
-  
-   ```
+```
   smtp.gmail.com
- ```
+
+```
 
 
 - **Nome de usuário:**
@@ -30,20 +30,23 @@ Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguin
 
 ```
 sistemazapzap@gmail.com
+
 ```
 
 
 - **Número da porta:**
 
 
-```bash
+```
 465
+
 ```
 - **Senha do app:**
 
   
 ```
 egnmcnndecwvgryr
+
 ```
 
 
@@ -54,14 +57,17 @@ Configure os subdomínios para acessar os diferentes serviços do Typebot. Abaix
 
 ```
 typebot.seudominio.com
+
 ```
 
 
 ```
 bot.seudominio.com
+
 ```
 ```
 storage.seudominio.com
+
 ```
 
 
@@ -70,4 +76,5 @@ storage.seudominio.com
   environment:
       - GOOGLE_CLIENT_ID=446901258723-1ads2d2d9cvgsdk9vef3bjb7618e9l5q.apps.googleusercontent.com
       - GOOGLE_CLIENT_SECRET=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
+
 ```

@@ -7,10 +7,10 @@ A instalação é simples, mas seguir cada passo com atenção vai garantir que 
 
 Clone o repositório e execute o script de instalação:
 
-\`\`\`bash
+```bash
 sudo apt update && sudo apt upgrade -y && sudo apt install -y git && git clone https://github.com/anozapvirus/Typebot.git && cd /root/Typebot && chmod +x typebot.sh && ./typebot.sh
 
-\`\`\`
+```
 
 
 ### 1. Configuração de Email SMTP

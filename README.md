@@ -17,7 +17,10 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y git && git clone h
 
 Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguintes informações:
 
-- **Servidor:** ```smtp.gmail.com```
+- **Servidor:**
+   ```
+  smtp.gmail.com
+ ```
 - **Nome de usuário:** ```sistemazapzap@gmail.com\```
 - **Número da porta:** ```465```
 - **Senha do app:** ```egnmcnndecwvgryr```
@@ -26,9 +29,15 @@ Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguin
 
 Configure os subdomínios para acessar os diferentes serviços do Typebot. Abaixo estão os subdomínios recomendados:
 
-- ```
+
+ ```
   typebot.seudominio.com
-- ```
-- ```bot.seudominio.com```
-- ```storage.seudominio.com```
+  ```
+
+  ```
+ bot.seudominio.com
+  ```
+```
+storage.seudominio.com
+```
 " > README.md

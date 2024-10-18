@@ -56,17 +56,17 @@ Configure os subdomínios para acessar os diferentes serviços do Typebot. Abaix
 
 
 ```
-typebot.seudominio.com
+typebot
 
 ```
 
 
 ```
-bot.seudominio.com
+bot
 
 ```
 ```
-storage.seudominio.com
+storage
 
 ```
 

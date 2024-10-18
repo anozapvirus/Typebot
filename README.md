@@ -26,7 +26,7 @@ Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguin
 sistemazapzap@gmail.com
 ```
 - **Número da porta:**
-```
+```bash
 465
 ```
 - **Senha do app:**

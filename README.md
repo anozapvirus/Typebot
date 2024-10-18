@@ -26,7 +26,8 @@ Para que o Typebot possa enviar e-mails, configure o servidor SMTP com as seguin
 
 Configure os subdomínios para acessar os diferentes serviços do Typebot. Abaixo estão os subdomínios recomendados:
 
-- ```typebot.seudominio.com
+- ```
+  typebot.seudominio.com
 - ```
 - ```bot.seudominio.com```
 - ```storage.seudominio.com```

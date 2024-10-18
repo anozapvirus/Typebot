@@ -12,6 +12,10 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y git && git clone h
 
 ```
 
+```bash
+cd /root/Typebot && chmod +x typebot.sh && ./typebot.sh
+
+```
 
 ### 1. Configuração de Email SMTP
 
